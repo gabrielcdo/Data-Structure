@@ -11,11 +11,11 @@
 
 Algoritmo: Rearranja A[1 ... n] em ordem crescente.
 
-Ordena_por_inserção(A,n)
-    para j<-2 até n faça
-        chave <-A[j]
-        i <- j-1
-        enquanto i>= 1 e A[i]>chave faça
-            A[i+1]<-A[i]
-            i<- i-1
-        A[i+1] <-chave
+Ordena_por_inserção(A,n)  
+    para j<-2 até n faça  
+        chave <-A[j]  
+        i <- j-1  
+        enquanto i>= 1 e A[i]>chave faça  
+            A[i+1]<-A[i]  
+            i<- i-1  
+        A[i+1] <-chave  
