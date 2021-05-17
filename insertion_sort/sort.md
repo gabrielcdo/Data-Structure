@@ -10,7 +10,7 @@
 - Estável: não altera a ordem de dados iguais capaz de ordenar os dados a medida em que os recebe ( tempo real )
 
 Algoritmo: Rearranja A[1 ... n] em ordem crescente.
-
+```
 Ordena_por_inserção(A,n)  
     para j<-2 até n faça  
         chave <-A[j]  
@@ -19,3 +19,4 @@ Ordena_por_inserção(A,n)
             A[i+1]<-A[i]  
             i<- i-1  
         A[i+1] <-chave  
+```
