@@ -1,12 +1,18 @@
-def insertion_sort(vetor):
-  for j in range ( 1 , len(vetor)):
-    chave = vetor[j]
-    i = j - 1 
-    while i >= 0 and vetor[i] > chave:
-      vetor[i+1] = vetor[i]
-      i-=1
-    vetor[i+1]=chave
+def insertion_sort(arr , value):
+  left = 0 
+  right = len(arr)-1
+  mid = 0
+  while left <=right:
+    mid = (left + right)//2
+    if (value < arr[mid]):
+      right = mid - 1
+    elif (value > arr[mid]):
+      left = mid +1 
+    else:
+      return mid 
+  return -1
 
-vetor = [ 5 , 3 , 2 , 4, 9 , 12 , 3]
-insertion_sort(vetor)
-print(vetor)
+vetor = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 ]
+aux = insertion_sort(vetor , 7)
+print(aux)
+
