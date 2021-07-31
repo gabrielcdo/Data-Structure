@@ -14,7 +14,7 @@ Kadane(A,n)
             max_global = max_max_local
     retorna max_global
 ```
-## Invariants loops
+## Loops Invariants
 - para uma posição i , max_local representa a maior sequencia da posição anterior ou 0 para i=0 , tal que a maior sequencia que se encerra nessa mesma posição é A[i]+max_local para max_local>0 ou A[i] para max_local < 0
 - se max_local for maior que a maior sequencia até então, a maior sequencia se torna max_local
 
