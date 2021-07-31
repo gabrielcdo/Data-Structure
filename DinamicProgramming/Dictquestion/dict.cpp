@@ -40,5 +40,5 @@ int main(){
     }
 
 }
-
+// output: eu amo programação dinamica
 // it works :)
